@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <img src="imagenes/sobre-mi.jpg" alt="Sobre mí" class="about-img">
+        <p>Hola, mi nombre es Angy Henao, soy de Colombia, soy profesional en negocios internacionales y especialista en gerencia de proyectos, estoy empezando en el mundo del desarrollo web y me apasiona crear experiencias interactivas y visuales.</p>
+         <h2>Habilidades</h2>
+            <ul id="skills">
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Git & GitHub</li>
+            </ul>
+        
+    </section>
+        
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="imagenes/juego-secreto.jpg" alt="Proyecto 1">
+                <h3>Juego del número secreto</h3>
+                <p>El juego consiste en que el programa genera un número aleatorio secreto que el usuario debe adivinar. El usuario ingresa un número y el juego le indica si ese número es mayor, menor o igual al número secreto.</p>
+                <button onclick="openLink('https://github.com/anecho98/juegosecreto')">Ver en GitHub</button>
+                <button onclick="openLink('https://anecho98.github.io/juegosecreto/')">Jugar</button>
+            </div>
+            <div class="project">
+                <img src="imagenes/encriptador.jpg" alt="Proyecto 2">
+                <h3>Encriptador</h3>
+                <p>Es una aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.</p>
+                <button onclick="openLink('https://github.com/anecho98/encriptador')">Ver en GitHub</button>
+                <button onclick="openLink('https://anecho98.github.io/encriptador/')">Encriptar</button>
+                <button onclick="showDetails('Requisitos para utilizar el encriptador:', 'Debe funcionar solo con letras minúsculas. No deben ser utilizados letras con acentos ni caracteres especiales')">Ver Detalles</button>
+            </div>
+            <div class="project">
+                <img src="imagenes/fokus.jpg" alt="Proyecto 3">
+                <h3>Fokus</h3>
+                <p>Es una aplicación de gestión del tiempo que ayuda a los usuarios a mantenerse enfocados durante sus actividades de estudio o trabajo, con diferentes modos de "enfoque" y "descanso" que se activan a través de los botones de la interfaz.</p>
+                <button onclick="openLink('https://github.com/anecho98/fokus')">Ver en GitHub</button>
+                <button onclick="openLink('https://anecho98.github.io/fokus/')">Optimiza tu tiempo</button>
+            
+            </div>
+
+
+        </div>
+    </section>
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="hobbies-container">
+            <div class="hobby">
+                <img src="imagenes/lectura.jpg" alt="Hobby 1">
+                <h3>Lectura</h3>
+                <p>Me encanta leer libros de diferentes géneros, especialmente ciencia ficción y fantasía.</p>
+            </div>
+            <div class="hobby">
+                <img src="imagenes/viajes.jpg" alt="Hobby 2">
+                <h3>Viajes</h3>
+                <p>Disfruto viajar y conocer nuevas culturas, comidas y paisajes.</p>
+            </div>
+            <div class="hobby">
+                <img src="imagenes/fotografia.jpg" alt="Hobby 3">
+                <h3>Fotografía</h3>
+                <p>La fotografía es una forma de capturar momentos y paisajes que me apasiona.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Si deseas contactarme, envía un correo a <a href="mailto:angy.henaoco@amigo.edu.co">angy.henaoco@amigo.edu.co</a>.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Mi Portafolio. Alura ONE, grupo 6.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
